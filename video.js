@@ -247,7 +247,7 @@ function updateBookmarkDisplays() {
         var renameButton = document.createElement('td');
         renameButton.setAttribute('onclick', 'enableRenameBookmark(' + i + ', true); event.stopPropagation()');
         var renameButtonIcon = document.createElement('i');
-        renameButtonIcon.className = 'fa fa-pencil';
+        renameButtonIcon.className = 'fas fa-pencil';
         renameButton.appendChild(renameButtonIcon);
         row.appendChild(renameButton);
 
@@ -265,7 +265,7 @@ function updateBookmarkDisplays() {
         var deleteButton = document.createElement('td');
         deleteButton.setAttribute('onclick', 'deleteBookmark(' + i + '); event.stopPropagation()');
         var deleteButtonIcon = document.createElement('i');
-        deleteButtonIcon.className = 'fa fa-times';
+        deleteButtonIcon.className = 'fas fa-times';
         deleteButton.appendChild(deleteButtonIcon);
         row.appendChild(deleteButton);
 
@@ -485,12 +485,12 @@ function toTimeString(time) {
 function playPause() {
     if (video.paused) {
         video.play();
-        document.querySelector('#play-button i').className = 'fa fa-pause';
+        document.querySelector('#play-button i').toggleClass('fa-pause');
         hoverLeave('paused');
         showHotkeyPopup('play');
     } else {
         video.pause();
-        document.querySelector('#play-button i').className = 'fa fa-play';
+        document.querySelector('#play-button i').toggleClass('fa-play');
         hoverOver('paused');
         showHotkeyPopup('pause');
     }

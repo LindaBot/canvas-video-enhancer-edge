@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
         (document.head || document.documentElement).appendChild(script);
     }
-    
+
     //Inject the HTML
     //http://stackoverflow.com/questions/16334054/inject-html-into-a-page-from-a-content-script
     var xmlHttp = new XMLHttpRequest();
@@ -34,12 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.insertBefore(el, firstBodyElement);
     });
 
-    //Inject font awesome font face
-    var s = document.createElement('style');
-    s.type = 'text/css';
-    s.textContent = '@font-face{font-family:"FontAwesome";src:url("'
-        + chrome.extension.getURL('fonts/fontawesome-webfont.woff') + '");}';
-    (document.head || document.body).appendChild(s);
+    var script = document.createElement('script');
+        script.src = chrome.extension.getURL('fontawesome-all.js');
+        console.log('INJECT ' + 'fontawesome-all.js');
+        (document.head || document.documentElement).appendChild(script);
 
     //Inject volume button images
     s = document.createElement('style');

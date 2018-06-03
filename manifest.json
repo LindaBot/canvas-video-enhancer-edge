@@ -15,8 +15,7 @@
             ],
             "css": [
                 "video.css",
-                "playlist.css",
-                "font-awesome.min.css"
+                "playlist.css"
             ],
             "all_frames": true
         }
@@ -34,7 +33,7 @@
         "video.html",
         "video.js",
         "playlist.js",
-        "fonts/*",
+        "fontawesome-all.js",
         "img/*"
     ],
     "-ms-preload": {

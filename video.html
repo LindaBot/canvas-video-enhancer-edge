@@ -4,7 +4,7 @@
 <td>
 <div id="container" onmousemove="hoverTrigger()" onmouseleave="mouseLeaveContainer()" onclick="event.stopPropagation()">
     <video id="video" onclick="clickVideo()" width="100%" height="100%"
-           src="https://mediastore.auckland.ac.nz/2016/1163/PHYSICS107L01C/366694/201605201000.LT347631.REV1.mp4"></video>
+           src=""></video>
     <div id="controls">
         <div id="title"></div>
         <div id="gradient" onclick="clickVideo()">
@@ -38,14 +38,14 @@
                 <tr onclick="showQualityMenu()" class="clickable">
                     <td>Quality</td>
                     <td>
-                        <span id="selected-quality"></span>&nbsp&nbsp<i class="fa fa-angle-right"
+                        <span id="selected-quality"></span>&nbsp&nbsp<i class="fas fa-angle-right"
                                                                         aria-hidden="true"></i>
                     </td>
                 </tr>
                 </tbody>
                 <tbody id="quality-select">
                 <tr onclick="hideQualityMenu()" class="clickable">
-                    <td colspan="2" style="text-align:right;"><i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp&nbsp
+                    <td colspan="2" style="text-align:right;"><i class="fas fa-angle-left" aria-hidden="true"></i>&nbsp&nbsp
                         Quality
                     </td>
                 </tr>
@@ -55,19 +55,19 @@
                     </td>
                 </tr>
                 <tr onclick="setQuality('full');hideQualityMenu()" id="quality-full" class="clickable">
-                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td><i class="fas fa-check" aria-hidden="true"></i></td>
                     <td>Full Frame</td>
                 </tr>
                 <tr onclick="setQuality('high');hideQualityMenu()" id="quality-high" class="clickable">
-                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td><i class="fas fa-check" aria-hidden="true"></i></td>
                     <td>High</td>
                 </tr>
                 <tr onclick="setQuality('low');hideQualityMenu()" id="quality-low" class="clickable">
-                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td><i class="fas fa-check" aria-hidden="true"></i></td>
                     <td>Low</td>
                 </tr>
                 <tr onclick="setQuality('audio');hideQualityMenu()" id="quality-audio" class="clickable">
-                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                    <td><i class="fas fa-check" aria-hidden="true"></i></td>
                     <td>Audio Only</td>
                 </tr>
                 </tbody>
@@ -92,10 +92,10 @@
                onmouseleave="hoverLeave(this.id)">
             <tr>
                 <td id="play-button" class="control-button clickable" onclick="playPause();event.stopPropagation()">
-                    <i class="fa fa-play"></i>
+                    <i class="fas fa-play"></i>
                 </td>
                 <td id="volume-button" class="control-button clickable" onclick="toggleMute();event.stopPropagation()">
-                    <!-- class="fa fa-volume-up"></i-->
+                    <!-- class="fas fa-volume-up"></i-->
                     <div id="volume-button-icon" class="high">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
                 </td>
                 <td id="volume-slider-container">
@@ -111,23 +111,23 @@
                 </td>
                 <td id="hotkeys-reference-button" class="control-button clickable"
                     onclick="toggleHotkeysReference();hideOptionsMenu();event.stopPropagation()">
-                    <i class="fa fa-keyboard-o"></i>
+                    <i class="fas fa-keyboard-o"></i>
                 </td>
                 <td id="create-bookmark-button" class="control-button clickable"
                     onclick="createBookmark();hideOptionsMenu();event.stopPropagation()">
-                    <i class="fa fa-bookmark"></i>
+                    <i class="fas fa-bookmark"></i>
                 </td>
 				<td id="download-button" class="control-button clickable"
 					onclick="downloadVideo();hideOptionsMenu();event.stopPropagation()">
-					<i class="fa fa-download"></i>
+					<i class="fas fa-download"></i>
 				</td>
                 <td id="video-options-button" class="control-button clickable"
                     onclick="toggleOptionsMenu();hideHotkeysReference();event.stopPropagation()">
-                    <i class="fa fa-cog"></i>
+                    <i class="fas fa-cog"></i>
                 </td>
                 <td id="fullscreen-button" class="control-button clickable"
                     onclick="toggleFullScreen(document.querySelector('#container'));updateSeekDisplay();event.stopPropagation()">
-                    <i class="fa fa-expand"></i>
+                    <i class="fas fa-expand"></i>
                 </td>
             </tr>
         </table>
@@ -137,28 +137,28 @@
             <div id="hotkey-popup-middle">
                 <div id="hotkey-popup" class="inactive">
                     <div id="hotkey-popup-faster" class="hotkey-popup-icon">
-                        <i class="fa fa-forward"></i>
+                        <i class="fas fa-forward"></i>
                     </div>
                     <div id="hotkey-popup-slower" class="hotkey-popup-icon">
-                        <i class="fa fa-backward"></i>
+                        <i class="fas fa-backward"></i>
                     </div>
                     <div id="hotkey-popup-reset" class="hotkey-popup-icon">
-                        <i class="fa fa-reset"></i>
+                        <i class="fas fa-reset"></i>
                     </div>
                     <div id="hotkey-popup-skip-forward" class="hotkey-popup-icon">
-                        <i class="fa fa-step-forward"></i>
+                        <i class="fas fa-step-forward"></i>
                     </div>
                     <div id="hotkey-popup-skip-backward" class="hotkey-popup-icon">
-                        <i class="fa fa-step-backward"></i>
+                        <i class="fas fa-step-backward"></i>
                     </div>
                     <div id="hotkey-popup-pause" class="hotkey-popup-icon">
-                        <i class="fa fa-pause"></i>
+                        <i class="fas fa-pause"></i>
                     </div>
                     <div id="hotkey-popup-play" class="hotkey-popup-icon">
-                        <i class="fa fa-play"></i>
+                        <i class="fas fa-play"></i>
                     </div>
                     <div id="hotkey-popup-bookmark" class="hotkey-popup-icon">
-                        <i class="fa fa-bookmark"></i>
+                        <i class="fas fa-bookmark"></i>
                     </div>
                     <br>
                     <div id="hotkey-popup-text"></div>
@@ -170,7 +170,7 @@
         <div id="hotkeys-reference-middle">
             <div id="hotkeys-reference">
                 <div id="close-hotkeys" onclick="hideHotkeysReference()">
-                    <i class="fa fa-times"></i>
+                    <i class="fas fa-times"></i>
                 </div>
                 <table>
                     <tr>
@@ -245,7 +245,7 @@
         <div id="audio-only-hint-middle">
             <div id="audio-only-hint">
                 <div id="audio-only-title">Audio Only</div>
-                Click <i class="fa fa-cog"></i> to change
+                Click <i class="fas fa-cog"></i> to change
             </div>
         </div>
     </div>
@@ -263,7 +263,7 @@
             <table>
                 <tr>
                     <td>
-                        <div id="bookmarks-subtitle">Click <i class="fa fa-bookmark"></i> or press <span style="border: 1px solid grey; border-radius: 2px; padding: 1px 2px;">B</span> to create a Bookmark</div>
+                        <div id="bookmarks-subtitle">Click <i class="fas fa-bookmark"></i> or press <span style="border: 1px solid grey; border-radius: 2px; padding: 1px 2px;">B</span> to create a Bookmark</div>
                     </td>
                     <!-- <td id="playlist-progress">
                         <span id="current-video"></span>/<span id="total-videos"></span>
