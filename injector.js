@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var scriptsToInject = ['video.js', 'playlist.js'];
 
     //Inject the JS
-    //http://stackoverflow.com/questions/9515704/building-a-chrome-extension-inject-code-in-a-page-using-a-content-script
     for(var i = 0; i < scriptsToInject.length; i++){
         var script = document.createElement('script');
         script.src = chrome.extension.getURL(scriptsToInject[i]);
