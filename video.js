@@ -485,12 +485,12 @@ function toTimeString(time) {
 function playPause() {
     if (video.paused) {
         video.play();
-        document.querySelector('#play-button i').toggleClass('fa-pause');
+        document.querySelector('#play-button i').className = 'fas fa-pause';
         hoverLeave('paused');
         showHotkeyPopup('play');
     } else {
         video.pause();
-        document.querySelector('#play-button i').toggleClass('fa-play');
+        document.querySelector('#play-button i').className = 'fas fa-play';
         hoverOver('paused');
         showHotkeyPopup('pause');
     }

@@ -34,10 +34,16 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.insertBefore(el, firstBodyElement);
     });
 
+    // Inject FontAwesome JS
     var script = document.createElement('script');
         script.src = chrome.extension.getURL('fontawesome-all.js');
         console.log('INJECT ' + 'fontawesome-all.js');
         (document.head || document.documentElement).appendChild(script);
+    
+    // Tell FontAwesome to nest SVGs
+    var scriptConfig = document.createElement('script');
+    scriptConfig.textContent = "FontAwesomeConfig = { autoReplaceSvg: 'nest' }";
+    (document.head || document.documentElement).appendChild(scriptConfig);
 
     //Inject volume button images
     s = document.createElement('style');
