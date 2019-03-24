@@ -614,8 +614,9 @@ document.addEventListener('keydown', function (e) {
         return;
     }
     switch (e.keyCode) {
-        //Space play/pauses
+        //Space or Key 'K' to play/pauses
         case 32:
+        case 75:
             hoverTrigger();
             playPause();
             break;
@@ -623,8 +624,9 @@ document.addEventListener('keydown', function (e) {
         case 70:
             toggleFullScreen(container);
             break;
-        //Left arrow skips back
-        case 37:
+        //Left arrow or Key 'J' skips back
+        case 37: 
+        case 74:
             hoverTrigger();
             //Shift modifier makes skip longer
             if (e.shiftKey) {
@@ -635,8 +637,9 @@ document.addEventListener('keydown', function (e) {
                 showHotkeyPopup('skip-backward', skipTime + 's');
             }
             break;
-        //Right arrow skips forward
+        //Right arrow or Key 'L' skips forward
         case 39:
+        case 76:
             hoverTrigger();
             //Shift modifier makes skip longer
             if (e.shiftKey) {
