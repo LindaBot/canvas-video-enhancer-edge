@@ -27,7 +27,7 @@ document.querySelector('#video').currentTime = startTime;
 var preview = document.querySelector('#preview');
 var thumbnail = document.querySelector('#thumbnail');
 var timeDisplay = document.querySelector('#time-display');
-var thumbnailsOn = false;
+var thumbnailsOn = true;
 var optionsMenu = document.querySelector('#options-menu-container');
 var videoSpeed = document.querySelector('#video-speed');
 
