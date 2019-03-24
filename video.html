@@ -7,7 +7,7 @@
            src=""></video>
     <div id="controls">
         <div id="title"></div>
-        <div id="gradient" onclick="clickVideo()">
+        <div id="gradient" onclick="clickVideo()" ondblclick="toggleFullScreen(document.querySelector('#container'));updateSeekDisplay();event.stopPropagation()">
             <div id="bottomHoverZone" onmouseover="hoverOver(this.id)" onmouseleave="hoverLeave(this.id)"></div>
         </div>
         <div id="preview">
